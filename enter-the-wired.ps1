@@ -108,8 +108,8 @@ function Install-EnterTheWiredWin {
     try {
         # Fetch scripts if running via pipe
         if ($runningViaPipe) {
-            $accelaUrl = "https://raw.githubusercontent.com/$GITHUB_USER/$GITHUB_REPO/main/windows/accela.ps1"
-            $greenlumaUrl = "https://raw.githubusercontent.com/$GITHUB_USER/$GITHUB_REPO/main/windows/greenluma.ps1"
+            $accelaUrl = "https://raw.githubusercontent.com/Mrtk1/accela-windows/refs/heads/main/accela.ps1"
+            $greenlumaUrl = "https://raw.githubusercontent.com/Mrtk1/accela-windows/refs/heads/main/greenluma.ps1"
 
             Write-Status "Fetching accela.ps1..." -Type Info
             Invoke-WebRequest -Uri $accelaUrl -OutFile (Join-Path $scriptDir "accela.ps1") -ErrorAction Stop
