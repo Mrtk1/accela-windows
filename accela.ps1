@@ -25,7 +25,7 @@ $runningViaPipe = [string]::IsNullOrEmpty($scriptPath) -or $scriptPath -eq "-"
 # CONFIGURATION
 # =============================================================================
 
-$GITHUB_OWNER = "ciscosweater"
+$GITHUB_OWNER = "Mrtk1"
 $GITHUB_REPO = "enter-the-wired"
 
 # =============================================================================
